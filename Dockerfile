@@ -1,2 +1,3 @@
 FROM scratch
-ENTRYPOINT [ "sh" ]
+ADD run.sh /usr/bin
+ENTRYPOINT [ "/usr/bin/run.sh" ]
